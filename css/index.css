@@ -13,7 +13,7 @@ header{
 .navElement{
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
-    padding-top: 20px;
+    margin-top: 20px;
     font-family: 'Inconsolata', monospace;
     
 }
@@ -21,7 +21,7 @@ header{
     justify-self: center;
     align-self: flex-start;
     position: relative;
-    bottom: 5px;
+    top: 3px;
     font-size: 30px;
     color: #171717;
 }
@@ -29,7 +29,7 @@ header{
     align-self: center;
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 20px;
     font-size: 30px;
     color: #171717;
 }
@@ -50,8 +50,16 @@ header{
     justify-self: center;
     font-size: 15px;
     text-decoration: none;
-   
     font-weight: bold;
+    transition: all 400ms ease;
+    padding:10px;
+    
+}
+.navElement__links ul a:hover{
+    background-color: #A03C78; 
+    border-radius: 10px;
+    color: beige;
+
 }
 .heading{
     display: flex;
