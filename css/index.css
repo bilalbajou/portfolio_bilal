@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 *{
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
 header{
-    /* background-image: linear-gradient(to right bottom, #000000, #37181f, #6a2733, #a23741, #da4a4a);
-    height: 100vh; */
+    
+    display: flex;
+    flex-direction: column;
 }
 .navElement{
     display: grid;
@@ -34,7 +36,7 @@ header{
     color: #171717;
 }
 .navElement__links{
-     grid-column: 2/4; 
+     grid-column: 2/6; 
      justify-self: center;
      
 }
@@ -75,12 +77,97 @@ header{
 }
 .illustrations img{
     width: 100%;
+    height: auto;
 }
 .heiding-content{
    text-align: center;
    width: 50%;
    font-family: 'Tourney', cursive;
    line-height: 40px;
+   position: relative;
+   background-image: url("http://www.w3.org/2000/svg");
+}
+.heiding-content p{
+    font-family: 'Fira Sans', sans-serif;
+}
+svg{
+    position: absolute;
+    z-index: -1;
+    bottom:40% ;
+    
+}
+.link-cv{
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #D62AD0;
+    width: 15%;
+    position: relative;
+    left: 42%;
+    border-radius: 20px;
+    color: beige;
+    transition: all 400ms ease;
+    
+}
+.link-cv:hover{
+    
+    transform: translatey(-10px);
+    -webkit-box-shadow: 3px 5px 18px 0px rgba(0,0,0,0.75); 
+box-shadow: 3px 5px 18px 0px rgba(0,0,0,0.75);
+}
+.heiding-content ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.heiding-content ul a{
+    margin-left: 10px;
+    font-size: 30px;
+    transition: all 400ms ease;
+}
+.heiding-content ul a:hover{
+    transform: rotate(1turn);
+    
+    color: #FBC7F7;
+}
+.link-bottom{
+    margin-top: 20px;
+    font-size: 3rem;
+    width: 3%;
+    position: relative;
+    left: 48%;
+    color: #5C33F6;
+    transition: all 400ms ease;
+}
+.link-bottom:hover{
+    transform: translateY(10px);
+}
+#about-me{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+.picture-bilal img{
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+    border-radius: 30px;
+    transition: all 300ms ease;
+}
+.picture-bilal img:hover{
+  transform: scale(1.05);
 }
 
+/* Media Queries */
 
+@media (max-width:996px){
+    .navElement__links{
+        display: none;
+    }
+
+}
+@media (max-width:889px){
+    
+}
