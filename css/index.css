@@ -184,9 +184,7 @@ box-shadow: 3px 5px 18px 0px rgba(0,0,0,0.75);
 .ligne{
     border: 1px black solid;
 }
-.type-formation{
-    
-}
+
 .type-formation ul{
     list-style: none;
     font-family: 'Inconsolata', monospace;
@@ -283,11 +281,17 @@ box-shadow: 3px 5px 18px 0px rgba(0,0,0,0.75);
 }
  .group-certificate{
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
      justify-items: center;
-      grid-gap: 20px;
+      grid-gap: 10px;
+      
+    
+      
       
  }
+ 
  .certifi img{
     width: 400px;
     height: 300px;
@@ -297,13 +301,17 @@ box-shadow: 3px 5px 18px 0px rgba(0,0,0,0.75);
  #img{
      margin-bottom: 10px;
  }
- .certifi a{
-     align-items:center ;
+ .link{
+     display: flex;
+     justify-content: center;
+ }
+ .link a{
+    
      font-family: 'Roboto Slab', serif;
      text-transform: capitalize;
      text-decoration: none;
-     position: relative;
-     left: 25%;
+     position: ;
+     
      color: #EEEEEE;
      background-color: #FF4848;
      padding: 10px;
