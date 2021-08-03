@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- js library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
+
+      <!-- css library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
     <title>Document</title>
 </head>
 <body>
+  
       <header>
+
+
        
-           <div class="navElement ">
+           <div class="navElement">
                   <div class=" navElement__icon animate__animated animate__backInDown animate__delay-0.4s"><i class="bi bi-code-slash"></i></div>
                   <div class="navElement__links ">
                       <ul class="animate__animated animate__backInDown animate__delay-0.4s">
                           <a href="#">Home</li></a>
                           <a href="#">about me</li></a>
                           <a href="#">Education</li></a>
-                          <a href="#">Experience</li></a>
-                          <a href="#">Projects</li></a>
                           <a href="#">Certificates</li></a>
                           <a href="#">Contact</li></a>
                          
@@ -28,6 +37,7 @@
                   </div>
                   
            </div>
+           
            <div class="header-content">
                    
                    <div class="heading">
@@ -50,20 +60,139 @@
                  
            </div>
             <a class="link-cv animate__animated animate__fadeInUp animate__delay-2s" target="_blank" href="https://drive.google.com/file/d/1UmBSaCm6_95ZjIDyKW0OR7ro4Ck-HTj0/view?usp=sharing">Discover My Cv</a>
-            <a href="#" class="link-bottom" > <i class="bi bi-arrow-down-circle-fill"></i></a>
+            <a href="#" class="link-bottom" data-aos="zoom-in" data-aos-mirror="true"
+            data-aos-once="true"> <i class="bi bi-arrow-down-circle-fill"></i></a>
                
       </header>
       <section id="about-me">
-            <div class="picture-bilal">
+            <div class="picture-bilal" data-aos="fade-right" data-aos-mirror="true"
+            data-aos-once="true" data-aos-duration="1500" data-aos-delay="250"
+            >
                <img src="img/bilal collage.png" alt=" photo bilal">
             </div>
             <div class="info-pers">
-               fffff
+               <h3 data-aos="fade-right" data-aos-mirror="true"
+               data-aos-once="true" data-aos-duration="1000"     data-aos-delay="250">personal informations</h3>
+                  <div class="content-pers" data-aos="fade-left" data-aos-mirror="true"
+                  data-aos-once="true"     data-aos-duration="1500" data-aos-delay="250"
+                  > 
+                      <pre>
+                         <p class="info-titre">full name: bajou bilal</p>
+                         <p class="info-titre">age: 19 ans</p>
+                         <p class="info-titre">email: <span id="email">bilalbajou05@gmail.com</span></p>
+                         <p class="info-titre">city: fès</p>
+                        </pre>
+                  </div>
             </div>
       </section>
-              
+      <section id="education">
+            <div class="type-formation">
+              <h3 data-aos="zoom-in" data-aos-mirror="true"
+              data-aos-once="true" data-aos-delay="100"
+              data-aos-duration="1000">Baccalauréat</h3>
+              <ul data-aos-mirror="true"
+              data-aos-once="true">
+                <li data-aos="fade-down-right" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000"><i class="bi bi-cursor"></i>Specialization: Physics Science</li>
+                <li data-aos="fade-down-right" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"><i class="bi bi-cursor"></i>High School: Ibn khaldoun</li>
+                <li data-aos="fade-down-right" data-aos-once="true" data-aos-delay="500" data-aos-duration="1000"><i class="bi bi-cursor"></i>City: Karia Ba Mohammed</li>
+                <li data-aos="fade-down-right" data-aos-once="true" data-aos-delay="700" data-aos-duration="1000"><i class="bi bi-cursor"></i>Year: 2019/2020</li>
+              </ul>
+            </div>
+            <div class="ligne" data-aos="zoom-in-up" data-aos-once="true">
+            </div>
+            <div class="type-formation">
+              <h3 data-aos="zoom-in" data-aos-mirror="true"
+              data-aos-once="true" data-aos-delay="100"
+              data-aos-duration="1000" >BTS Brevet de technicien supérieur</h3>
+              <ul>
+                <li data-aos="fade-down-left" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000"><i class="bi bi-cursor"></i>Specialization: information system development</li>
+                <li data-aos="fade-down-left" data-aos-once="true" data-aos-delay="300" data-aos-duration="1000"><i class="bi bi-cursor"></i>High School: Ibn Sina</li>
+                <li data-aos="fade-down-left" data-aos-once="true" data-aos-delay="500" data-aos-duration="1000"><i class="bi bi-cursor"></i>City: Taounate</li>
+                <li data-aos="fade-down-left" data-aos-once="true" data-aos-delay="700" data-aos-duration="1000"><i class="bi bi-cursor"></i>Year: In progress</li>
+              </ul>
+            </div>
+      </section>
+      <section id="projects">
+         <div class="title-section">
+             <h3>Some of my projects</h3>
+         </div>
+         <div class="group-projects">
+               <div class="projects">
+                    <p>Portfolio</p>
+                    
+                    <img src="img/projects1.png">
+                    <div class="tech">
+                      <span>HTML5</span><span>CSS3</span><span>bootstrap</span><span>Sass</span>
+                   </div>
+                    <div class="group-btn">
+                        <a href="#">Preview</a>
+                        <a href="#">Github</a>
+                    </div>
+
+               </div>
+               <div class="projects">
+                <p>Star clothing</p>
+                <img src="img/projects2.png">
+                
+                <div class="tech">
+                   <span>HTML5</span><span>CSS3</span><span>bootstrap</span>
+                </div>
+                <div class="group-btn">
+                    <a href="https://bilalbajou.github.io/starclothing/">Preview</a>
+                    <a href="https://github.com/bilalbajou/starclothing.git">Github</a>
+                </div>
+
+           </div>
+           <div class="projects">
+            <p>Landing page product</p>
+            <img src="img/projects3.png">
+            <div class="tech">
+              <span>HTML5</span><span>CSS3</span>
+           </div>
+            <div class="group-btn">
+                <a target="_blank" href="https://bilalbajou.github.io/Landing-page-product/">Preview</a>
+                <a target="_blank" href="https://github.com/bilalbajou/Landing-page-product.git">Github</a>
+            </div>
+
+       </div>
+      
+         </div>
+      </section>
+      <section id="certificate">
+        <h3 class="text-section">Some Of my online Certificates</h3>
+          <div class="group-certificate">
+                <div class="certifi">
+                  <img src="img/certi1.jpg">
+                  <a target="_blank" href="https://drive.google.com/file/d/1uMz6TGQKtVidyTKoMV1p-KLgp5D0jI0h/view?usp=sharing">Download certificate</a>                </div>
+                <div class="certifi">
+                  <img src="img/certi2.jpg" id="img">
+                 <a target="_blank" href="https://www.freecodecamp.org/certification/fcc36dacc0e-3708-458b-8b34-20eac0e0bf7b/responsive-web-design">Download certificate</a>
+                </div>
+                <div class="certifi">
+                  <img src="img/certi3.jpg">
+                 <a target="_blank" href="https://drive.google.com/file/d/14bHgut7Pr8qwcn-IiJywvW1IFLiF1eAK/view?usp=sharing">Download certificate</a>
+                </div>
+                <div class="certifi">
+                  <img src="img/certi4.jpg">
+                 <a target="_blank" href="https://drive.google.com/file/d/1az0htkIBjWt8t9qA6mCE-6XrKZt6gtvg/view?usp=sharing">Download certificate</a>
+                </div>
+                <div class="certifi">
+                  <img src="img/certi5.jpg">
+                 <a target="_blank" href="https://drive.google.com/file/d/1q5ScLrx8r0uwkNhSW3_CyvIFxa996kVK/view?usp=sharing">Download certificate</a>
+                </div>
+                <div class="certifi">
+                  <img src="img/certi6.jpg">
+                 <a target="_blank" href="https://drive.google.com/file/d/1-UpyUsNkszGQ78fuTyxcFkU9qt8wxk_P/view?usp=sharing">Download certificate</a>
+                </div>
+          </div>
+      </section>
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+  
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>

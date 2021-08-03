@@ -1,7 +1,4 @@
-const w= window.innerWidth;
+var btn=document.getElementById("btn1").addEventListener('click',function(){
 
-if(w>996){
-    
-}
-
-
+    console.log(123);
+});
