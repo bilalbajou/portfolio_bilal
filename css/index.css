@@ -15,8 +15,7 @@
 body{
     width: auto;
 }
-
-header{   
+header{
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +24,7 @@ header{
     grid-template-columns:  30% 70% ;
     margin-top: 20px;
     font-family: 'Inconsolata', monospace;
-    
+    display: none;
 }
 
 .navElement__icon{
@@ -66,6 +65,8 @@ header{
     color: beige;
 
 }
+
+
 .heading{
     display: flex;
     flex-direction: row-reverse;
@@ -441,6 +442,7 @@ box-shadow:  21px -21px 39px #bababa,
     list-style: none;
     text-transform: uppercase;
     font-family: 'Inconsolata', monospace;
+    
 }
 .bloc3 ul  a{
     margin-left: 20px;
@@ -455,7 +457,7 @@ box-shadow:  21px -21px 39px #bababa,
 /* Media Queries */
 @media (max-width:1081px){
     .navElement__links ul a{
-        font-size: 14px;
+        font-size: 10px;
     }
     #about-me{
         grid-template-columns: 1fr;
@@ -468,6 +470,9 @@ box-shadow:  21px -21px 39px #bababa,
     }
     .content-section{
         grid-template-columns: 1fr;
+    }
+    .navElement__links{
+        display: none;
     }
 }
 @media (max-width:871px){
@@ -508,5 +513,27 @@ box-shadow:  21px -21px 39px #bababa,
     }
     .navElement__links ul a{
         font-size: 13px;
+       
     }
+}
+@media (max-width:473px){
+    .content-pers{
+        display: flex;
+        justify-content: center;
+    }
+    .content-pers pre p{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .container .bloc1 img{
+        max-width: 100%;
+  height: auto;
+    }
+    .link-cv{
+        width: 12rem;
+        position: relative;
+        left: 31%;
+    }
+    
 }
